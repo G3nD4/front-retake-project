@@ -104,9 +104,15 @@ export default function Wishlist() {
             description="Adds special icon to important wishes"
             {...form.getInputProps("important", { type: "checkbox" })}
           />
-          <Button type="submit" variant="filled" color="blue">
+          {/* <Button type="submit" variant="filled" color="blue">
             Submit
-          </Button>
+          </Button> */}
+          <button
+            className="flex-row bg-blue-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  "
+            onClick={() => handleSubmitClick}
+          >
+            Submit
+          </button>
         </form>
       </Modal>
       <main className="w-full h-full flex flex-col items-center py-10 gap-10 bg-[#ffffff]">

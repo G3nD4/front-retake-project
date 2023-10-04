@@ -58,7 +58,7 @@ export default function WishInfo({ params }: WishInfoProps) {
                 Cancel
               </Button> */}
               <button
-                className="flex-row bg-red-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  "
+                className="flex-row bg-blue-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  "
                 onClick={close}
               >
                 Cancel
@@ -102,7 +102,7 @@ export default function WishInfo({ params }: WishInfoProps) {
               )}
             </div>
             <Divider className="my-2 w-1/6"></Divider>
-            <Button
+            {/* <Button
               variant="filled"
               size="s"
               color="yellow"
@@ -110,8 +110,14 @@ export default function WishInfo({ params }: WishInfoProps) {
               onClick={open}
             >
               Remove
-            </Button>
-            <button className="flex-row bg-red-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  ">
+            </Button> */}
+            <button
+              className="flex-row bg-red-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  "
+              onClick={open}
+            >
+              Remove
+            </button>
+            <button className="flex-row bg-blue-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  ">
               <a href="/wishList">Back</a>
             </button>
           </Paper>
