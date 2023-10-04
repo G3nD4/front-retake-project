@@ -112,14 +112,20 @@ export default function Wishlist() {
       <main className="w-full h-full flex flex-col items-center py-10 gap-10 bg-[#ffffff]">
         <NavBar />
         <h1 className="text-3xl font-semibold">Current Wishes</h1>
-        <Button
+        <button
+          className="flex-row bg-red-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  "
+          onClick={handleNewWishClick}
+        >
+          <a href="/wishList">New Wish</a>
+        </button>
+        {/* <Button
           className="shrink-0"
           variant="filled"
           size="md"
           onClick={handleNewWishClick}
         >
           New Wish
-        </Button>
+        </Button> */}
         {(wishes as Wish[]).map((wish) => (
           <Paper
             shadow="xs"

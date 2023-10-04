@@ -49,22 +49,34 @@ export default function WishInfo({ params }: WishInfoProps) {
               Are you sure you want to remove {wish.name} from your wishlist?
             </h1>
             <div className="flex w-full gap-10">
-              <Button
+              {/* <Button
                 className="grow"
                 variant="outline"
                 color="grey"
                 onClick={close}
               >
                 Cancel
-              </Button>
-              <Button
+              </Button> */}
+              <button
+                className="flex-row bg-red-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  "
+                onClick={() => close}
+              >
+                <a href="/wishList">Cancel</a>
+              </button>
+              <button
+                className="flex-row bg-red-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  "
+                onClick={() => handleRemoveClick(wish.id)}
+              >
+                <a href="/wishList">Remove</a>
+              </button>
+              {/* <Button
                 className="grow"
                 variant="filled"
                 color="red"
                 onClick={() => handleRemoveClick(wish.id)}
               >
                 Remove
-              </Button>
+              </Button> */}
             </div>
           </div>
         </Modal>
