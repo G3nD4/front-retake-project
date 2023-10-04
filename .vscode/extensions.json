@@ -1,0 +1,5 @@
+{
+  //  When someone opens project, they will be prompted to install
+  //  these extensions if they are not already installed.
+  "recommendations": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+}

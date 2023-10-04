@@ -1,0 +1,10 @@
+{
+  // Format file on Save
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  // Insert final new line
+  "files.insertFinalNewline": true
+}
