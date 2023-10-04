@@ -59,15 +59,15 @@ export default function WishInfo({ params }: WishInfoProps) {
               </Button> */}
               <button
                 className="flex-row bg-red-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  "
-                onClick={() => close}
+                onClick={close}
               >
-                <a href="/wishList">Cancel</a>
+                Cancel
               </button>
               <button
                 className="flex-row bg-red-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  "
                 onClick={() => handleRemoveClick(wish.id)}
               >
-                <a href="/wishList">Remove</a>
+                Remove
               </button>
               {/* <Button
                 className="grow"
