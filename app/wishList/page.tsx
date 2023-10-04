@@ -116,7 +116,7 @@ export default function Wishlist() {
           className="flex-row bg-red-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  "
           onClick={handleNewWishClick}
         >
-          <a href="/wishList">New Llalalal</a>
+          <a href="/wishList">New Wish</a>
         </button>
         {/* <Button
           className="shrink-0"
