@@ -113,10 +113,10 @@ export default function Wishlist() {
         <NavBar />
         <h1 className="text-3xl font-semibold">Current Wishes</h1>
         <button
-          className="flex-row bg-red-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  "
+          className="flex-row bg-blue-500 rounded-md text-white font-semi bold px-4 py-1.5 ml-10 hover:bg-red-600  "
           onClick={handleNewWishClick}
         >
-          <a href="/wishList">New Wish</a>
+          New Wish
         </button>
         {/* <Button
           className="shrink-0"
