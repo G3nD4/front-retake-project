@@ -6,6 +6,7 @@ import { useDisclosure } from "@mantine/hooks";
 import { deleteItem, getAllItems } from "../../../app/wishList/firebase";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Head from "next/head";
 
 type WishInfoProps = {
   params: { id: number };
@@ -34,6 +35,14 @@ export default function WishInfo({ params }: WishInfoProps) {
   return (
     wish && (
       <>
+        <Head>
+          <title>{wish.name}</title>
+          <meta
+            charSet="utf-8"
+            name="description"
+            content="Full information about your wish"
+          />
+        </Head>
         <Modal opened={opened} onClose={close} title="Confirmation">
           <div className="flex flex-col gap-10">
             <h1 className="text-md font-semibold">
